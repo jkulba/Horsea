@@ -1,4 +1,4 @@
-package us.kulba.horsea.repositories;
+package us.kulba.horsea.config;
 
 import com.google.common.base.Preconditions;
 import org.springframework.beans.factory.annotation.Autowired;
