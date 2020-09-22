@@ -16,7 +16,6 @@ import java.util.Date;
  * @author James Kulba, jkulba@gmail.com
  */
 @Entity
-//@Table(name = "CONTACT")
 public class Contact extends BaseObject {
 
     private static final long serialVersionUID = -8993984652880822653L;
