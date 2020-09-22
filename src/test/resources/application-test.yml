@@ -1,0 +1,45 @@
+# Test Configuration
+
+info:
+  app:
+    name: Horsea Service
+    description: Horsea services
+    version: 1.0-SNAPSHOT
+
+spring:
+  # The name of the application
+  application.name: horsea-service
+
+  # The name of the main config file, default is application
+  # config.name: application
+
+  # Profiles that should be active
+  profiles.active: default
+  profiles: default
+
+  # Configuration for SpringApplication setters
+  main:
+    web-environment: true
+    show-banner: true
+    log-startup-info: true
+
+  jpa:
+    database-platform: us.kulba.kingdra.dialect.SQLiteDialect
+    openInView: false
+    show_sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create-drop
+      naming-strategy: org.hibernate.cfg.EJB3NamingStrategy
+    properties:
+      hibernate.cache.use_second_level_cache: true
+      hibernate.cache.use_query_cache: false
+      hibernate.generate_statistics: true
+      hibernate.cache.region.factory_class: org.hibernate.cache.ehcache.EhCacheRegionFactory
+
+horsea:
+  datasource:
+    url: jdbc:sqlite:data/horsea-test.db
+    username: sa
+    password: sa
+    driverClassName: org.sqlite.JDBC
