@@ -1,5 +1,7 @@
 package us.kulba.horsea;
 
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.slf4j.Logger;
@@ -15,6 +17,16 @@ import us.kulba.horsea.config.TestPersistenceConfig;
 public class ApplicationTests {
 
     private static final Logger log = LoggerFactory.getLogger(ApplicationTests.class);
+
+    @BeforeAll
+    static void setup() {
+        log.info("@BeforeAll - executes once before all test methods in this class");
+    }
+
+    @BeforeEach
+    void init() {
+        log.info("@BeforeEach - executes before each test method in this class");
+    }
 
     @Test
     public void contextLoads() {
