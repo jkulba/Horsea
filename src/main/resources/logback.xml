@@ -23,7 +23,8 @@
     </appender>
 
     <logger name="us.kulba.horsea" level="DEBUG"/>
-    <logger name="org.springframework" level="WARN"/>
+    <logger name="org.hibernate" level="INFO"/>
+    <logger name="org.springframework" level="INFO"/>
 
     <root level="DEBUG">
         <appender-ref ref="CONSOLE"/>
