@@ -2,6 +2,7 @@
 *.vscode
 .classpath
 .project
+.settings
 
 # Database Files
 **/data/
