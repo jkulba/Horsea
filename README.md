@@ -1,6 +1,5 @@
-# Horsea
 <a href="https://github.com/jkulba/Horsea/">
-    <img alt="Horsea Project" src="https://github.com/jkulba/Horsea/blob/main/horsean.png"
+    <img alt="Horsea Project" src="https://github.com/jkulba/Horsea/blob/main/horsea.png"
     width="75" height="75">
 </a>
 
