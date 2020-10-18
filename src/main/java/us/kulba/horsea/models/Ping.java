@@ -2,6 +2,8 @@ package us.kulba.horsea.models;
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+
+import lombok.Data;
 import us.kulba.horsea.models.serializer.DateIsoDeSerializer;
 import us.kulba.horsea.models.serializer.DateIsoSerializer;
 
@@ -9,11 +11,11 @@ import java.util.Calendar;
 import java.util.Date;
 
 /**
- * Ping is a ..
+ * Ping is a POJO that describes system attributes.
  *
  * @author James Kulba, jkulba@gmail.com
  */
-public class Ping {
+public @Data class Ping {
     private String application;
     private String version;
     private Date now;

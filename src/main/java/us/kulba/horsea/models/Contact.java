@@ -2,7 +2,10 @@ package us.kulba.horsea.models;
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+
 import org.hibernate.validator.constraints.Length;
+
+import lombok.Data;
 import us.kulba.horsea.models.serializer.DateIsoDeSerializer;
 import us.kulba.horsea.models.serializer.DateIsoSerializer;
 import javax.persistence.*;
@@ -16,9 +19,8 @@ import java.util.Date;
  * @author James Kulba, jkulba@gmail.com
  */
 @Entity
-public class Contact extends BaseObject {
-
-    private static final long serialVersionUID = -8993984652880822653L;
+@Table(name = "CONTACT")
+public @Data class Contact {
 
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)

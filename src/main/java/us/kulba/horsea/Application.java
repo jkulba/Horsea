@@ -22,4 +22,5 @@ public class Application {
         log.info("Starting Horsea Service");
         SpringApplication.run(Application.class, args);
     }
+
 }
