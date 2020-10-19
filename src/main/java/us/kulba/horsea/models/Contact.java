@@ -23,7 +23,7 @@ import java.util.Date;
 public @Data class Contact {
 
     @Id
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    @GeneratedValue(strategy=GenerationType.AUTO)
     private long id;
 
     @NotNull

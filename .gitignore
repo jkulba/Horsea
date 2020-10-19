@@ -5,6 +5,7 @@
 .settings
 .factorypath
 processor.db
+*.iml
 
 # Database Files
 **/data/
