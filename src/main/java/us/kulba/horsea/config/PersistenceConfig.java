@@ -18,6 +18,12 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import javax.sql.DataSource;
 import java.util.Properties;
 
+/**
+ * PersistenceConfig manages the database connection and Entity Factory parameters.
+ * The property values are loaded from the persistence.properties file.
+ *
+ * @author James Kulba, jkulba@gmail.com
+ */
 @Configuration
 @PropertySource("classpath:persistence.properties")
 @EnableTransactionManagement
