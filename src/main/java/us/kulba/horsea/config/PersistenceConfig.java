@@ -49,8 +49,8 @@ public class PersistenceConfig {
         final DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName(Preconditions.checkNotNull(env.getProperty("jdbc.driverClassName")));
         dataSource.setUrl(Preconditions.checkNotNull(env.getProperty("jdbc.url")));
-        dataSource.setUsername(Preconditions.checkNotNull(env.getProperty("jdbc.user")));
-        dataSource.setPassword(Preconditions.checkNotNull(env.getProperty("jdbc.pass")));
+//        dataSource.setUsername(Preconditions.checkNotNull(env.getProperty("jdbc.user")));
+//        dataSource.setPassword(Preconditions.checkNotNull(env.getProperty("jdbc.pass")));
 
         return dataSource;
     }
